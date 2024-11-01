@@ -1,0 +1,27 @@
+{
+  "name": "accessibility-audit-tool-1",
+  "version": "1.1.0",
+  "description": "The Accessibility Audit Tool is a client-side application designed to help web developers and designers assess the accessibility compliance of their websites. By leveraging the power of CoffeeScript, this tool performs automated audits against the Web Content Accessibility Guidelines (WCAG) to identify potential accessibility issues",
+  "main": "dist/auditTool.js",
+  "scripts": {
+   "build": "coffee -c -o dist src/ariaChecker.coffee src/auditTool.coffee src/contrastChecker.coffee src/keyboardChecker.coffee src/example.coffee",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "accessibility",
+    "wcag",
+    "audit",
+    "web development"
+  ],
+  "author": "Saurabh-phadtare",
+  "license": "MIT",
+  "dependencies": {
+    "coffeescript": "^2.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "jsdom": "^25.0.1"
+  }
+}
